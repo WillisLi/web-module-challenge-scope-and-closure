@@ -44,7 +44,7 @@ Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
 
-    Closure is when a function has access to the variables of its lexical scope, even if it is executed outside of its parent function.
+    Closure is when a function has access to the variables of its lexical scope, even if it is executed outside of that parent scope.
 
 2. Study the following code, then answer the questions below.
 
@@ -68,7 +68,7 @@ dansRoll();
 
 a. Where is closure used in this code? How can you tell?
 
-    Closure is being used by function(). It takes the argument passed to the parent function and uses that variable in the console.log(). function() is accessing "name" in the lexical scope.
+    Closure is being used by function(). It takes the variable passed to the parent function and uses that variable in the console.log(). function() is accessing "name" in the lexical scope.
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 

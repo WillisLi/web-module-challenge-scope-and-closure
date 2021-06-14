@@ -33,14 +33,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   
   2. Which of the two uses a closure? How can you tell?
 
-      counter1 uses closure because the inner function of counterMaker(), counter(), utilizes the private variable, count, to increment the count. 
-      The variable count, cannot be accessed outside of the function.
+      Both use closure.
+      counter1 uses closure because the inner function of counterMaker(), counter(), utilizes the variable, count, from the lexical scope to increment the count. 
+      counter2 uses closure because it reaches to the global scope increment count.
+
 
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
 
      counter1 would be more preferable in a situation where you want to keep count for more than one instance and preserve those values from those different calls.
-     count2 would be better in a general loop/when the count is only used for one situation.
+     count2 would be better in a general loop/when the count is only used for one purpose.
 */
 
 // counter1 code
